@@ -10,3 +10,4 @@ RUN chmod +x setport.sh && \
 RUN ./setport.sh 80
 
 EXPOSE 80
+CMD [ "node", "spectator.js" ]
