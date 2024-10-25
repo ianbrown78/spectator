@@ -7,7 +7,7 @@ COPY src .
 RUN chmod +x setport.sh && \
     chmod +x START.sh
 
-RUN ./setport.sh 808
+RUN ./setport.sh 80
 
-EXPOSE 808
+EXPOSE 80
 CMD [ "node", "spectator.js" ]
